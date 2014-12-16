@@ -1,420 +1,909 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */; };
-		B3EC9C7D1A40AE2F00125BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */; };
-		B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */; };
-		B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C811A40AE2F00125BA8 /* Images.xcassets */; };
-		B3EC9C851A40AE2F00125BA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */; };
-		B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B3EC9C8B1A40AE2F00125BA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EC9C6D1A40AE2F00125BA8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B3EC9C741A40AE2F00125BA8;
-			remoteInfo = Weatherloo;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3EC9C791A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3EC9C7F1A40AE2F00125BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3EC9C811A40AE2F00125BA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B3EC9C841A40AE2F00125BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherlooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3EC9C8F1A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherlooTests.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		B3EC9C721A40AE2F00125BA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3EC9C871A40AE2F00125BA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		B3EC9C6C1A40AE2F00125BA8 = {
-			isa = PBXGroup;
-			children = (
-				B3EC9C771A40AE2F00125BA8 /* Weatherloo */,
-				B3EC9C8D1A40AE2F00125BA8 /* WeatherlooTests */,
-				B3EC9C761A40AE2F00125BA8 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		B3EC9C761A40AE2F00125BA8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */,
-				B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B3EC9C771A40AE2F00125BA8 /* Weatherloo */ = {
-			isa = PBXGroup;
-			children = (
-				B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */,
-				B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */,
-				B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */,
-				B3EC9C811A40AE2F00125BA8 /* Images.xcassets */,
-				B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */,
-				B3EC9C781A40AE2F00125BA8 /* Supporting Files */,
-			);
-			path = Weatherloo;
-			sourceTree = "<group>";
-		};
-		B3EC9C781A40AE2F00125BA8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B3EC9C791A40AE2F00125BA8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B3EC9C8D1A40AE2F00125BA8 /* WeatherlooTests */ = {
-			isa = PBXGroup;
-			children = (
-				B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */,
-				B3EC9C8E1A40AE2F00125BA8 /* Supporting Files */,
-			);
-			path = WeatherlooTests;
-			sourceTree = "<group>";
-		};
-		B3EC9C8E1A40AE2F00125BA8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B3EC9C8F1A40AE2F00125BA8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		B3EC9C741A40AE2F00125BA8 /* Weatherloo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B3EC9C941A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "Weatherloo" */;
-			buildPhases = (
-				B3EC9C711A40AE2F00125BA8 /* Sources */,
-				B3EC9C721A40AE2F00125BA8 /* Frameworks */,
-				B3EC9C731A40AE2F00125BA8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Weatherloo;
-			productName = Weatherloo;
-			productReference = B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B3EC9C891A40AE2F00125BA8 /* WeatherlooTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B3EC9C971A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "WeatherlooTests" */;
-			buildPhases = (
-				B3EC9C861A40AE2F00125BA8 /* Sources */,
-				B3EC9C871A40AE2F00125BA8 /* Frameworks */,
-				B3EC9C881A40AE2F00125BA8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B3EC9C8C1A40AE2F00125BA8 /* PBXTargetDependency */,
-			);
-			name = WeatherlooTests;
-			productName = WeatherlooTests;
-			productReference = B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		B3EC9C6D1A40AE2F00125BA8 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Connor Cimowsky";
-				TargetAttributes = {
-					B3EC9C741A40AE2F00125BA8 = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
-					B3EC9C891A40AE2F00125BA8 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = B3EC9C741A40AE2F00125BA8;
-					};
-				};
-			};
-			buildConfigurationList = B3EC9C701A40AE2F00125BA8 /* Build configuration list for PBXProject "Weatherloo" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = B3EC9C6C1A40AE2F00125BA8;
-			productRefGroup = B3EC9C761A40AE2F00125BA8 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B3EC9C741A40AE2F00125BA8 /* Weatherloo */,
-				B3EC9C891A40AE2F00125BA8 /* WeatherlooTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B3EC9C731A40AE2F00125BA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */,
-				B3EC9C851A40AE2F00125BA8 /* LaunchScreen.xib in Resources */,
-				B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3EC9C881A40AE2F00125BA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		B3EC9C711A40AE2F00125BA8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3EC9C7D1A40AE2F00125BA8 /* ViewController.swift in Sources */,
-				B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3EC9C861A40AE2F00125BA8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B3EC9C8C1A40AE2F00125BA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B3EC9C741A40AE2F00125BA8 /* Weatherloo */;
-			targetProxy = B3EC9C8B1A40AE2F00125BA8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3EC9C7F1A40AE2F00125BA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3EC9C841A40AE2F00125BA8 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		B3EC9C921A40AE2F00125BA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		B3EC9C931A40AE2F00125BA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B3EC9C951A40AE2F00125BA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Weatherloo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B3EC9C961A40AE2F00125BA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Weatherloo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B3EC9C981A40AE2F00125BA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WeatherlooTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
-			};
-			name = Debug;
-		};
-		B3EC9C991A40AE2F00125BA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WeatherlooTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		B3EC9C701A40AE2F00125BA8 /* Build configuration list for PBXProject "Weatherloo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B3EC9C921A40AE2F00125BA8 /* Debug */,
-				B3EC9C931A40AE2F00125BA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B3EC9C941A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "Weatherloo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B3EC9C951A40AE2F00125BA8 /* Debug */,
-				B3EC9C961A40AE2F00125BA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B3EC9C971A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "WeatherlooTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B3EC9C981A40AE2F00125BA8 /* Debug */,
-				B3EC9C991A40AE2F00125BA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = B3EC9C6D1A40AE2F00125BA8 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1DCB5A154AF9D8E8171ADA20</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D80D3B82B4892C8C75561CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BB5BBBD24D65245CDC09B882</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33F39E23191806F3C8C2FC70</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>79AFB6E10389E2BED79ECA51</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1DCB5A154AF9D8E8171ADA20</string>
+				<string>DDA2488013D20E5010A8B91F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7CC9217C3982901CD7556D50</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B3EC9C6C1A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C771A40AE2F00125BA8</string>
+				<string>B3EC9C8D1A40AE2F00125BA8</string>
+				<string>B3EC9C761A40AE2F00125BA8</string>
+				<string>79AFB6E10389E2BED79ECA51</string>
+				<string>2D80D3B82B4892C8C75561CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C6D1A40AE2F00125BA8</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Connor Cimowsky</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>B3EC9C741A40AE2F00125BA8</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+					</dict>
+					<key>B3EC9C891A40AE2F00125BA8</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+						<key>TestTargetID</key>
+						<string>B3EC9C741A40AE2F00125BA8</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>B3EC9C701A40AE2F00125BA8</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>B3EC9C6C1A40AE2F00125BA8</string>
+			<key>productRefGroup</key>
+			<string>B3EC9C761A40AE2F00125BA8</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B3EC9C741A40AE2F00125BA8</string>
+				<string>B3EC9C891A40AE2F00125BA8</string>
+			</array>
+		</dict>
+		<key>B3EC9C701A40AE2F00125BA8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B3EC9C921A40AE2F00125BA8</string>
+				<string>B3EC9C931A40AE2F00125BA8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B3EC9C711A40AE2F00125BA8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B3EC9C7D1A40AE2F00125BA8</string>
+				<string>B3EC9C7B1A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3EC9C721A40AE2F00125BA8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F0A8C896F200BE20A8F339C0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3EC9C731A40AE2F00125BA8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B3EC9C801A40AE2F00125BA8</string>
+				<string>B3EC9C851A40AE2F00125BA8</string>
+				<string>B3EC9C821A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3EC9C741A40AE2F00125BA8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B3EC9C941A40AE2F00125BA8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>33F39E23191806F3C8C2FC70</string>
+				<string>B3EC9C711A40AE2F00125BA8</string>
+				<string>B3EC9C721A40AE2F00125BA8</string>
+				<string>B3EC9C731A40AE2F00125BA8</string>
+				<string>7CC9217C3982901CD7556D50</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Weatherloo</string>
+			<key>productName</key>
+			<string>Weatherloo</string>
+			<key>productReference</key>
+			<string>B3EC9C751A40AE2F00125BA8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>B3EC9C751A40AE2F00125BA8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Weatherloo.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B3EC9C761A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C751A40AE2F00125BA8</string>
+				<string>B3EC9C8A1A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C771A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C7A1A40AE2F00125BA8</string>
+				<string>B3EC9C7C1A40AE2F00125BA8</string>
+				<string>B3EC9C7E1A40AE2F00125BA8</string>
+				<string>B3EC9C811A40AE2F00125BA8</string>
+				<string>B3EC9C831A40AE2F00125BA8</string>
+				<string>B3EC9C781A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Weatherloo</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C781A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C791A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C791A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C7A1A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C7B1A40AE2F00125BA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3EC9C7A1A40AE2F00125BA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EC9C7C1A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C7D1A40AE2F00125BA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3EC9C7C1A40AE2F00125BA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EC9C7E1A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C7F1A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C7F1A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C801A40AE2F00125BA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3EC9C7E1A40AE2F00125BA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EC9C811A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C821A40AE2F00125BA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3EC9C811A40AE2F00125BA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EC9C831A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C841A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C841A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C851A40AE2F00125BA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3EC9C831A40AE2F00125BA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EC9C861A40AE2F00125BA8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B3EC9C911A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3EC9C871A40AE2F00125BA8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3EC9C881A40AE2F00125BA8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3EC9C891A40AE2F00125BA8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B3EC9C971A40AE2F00125BA8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B3EC9C861A40AE2F00125BA8</string>
+				<string>B3EC9C871A40AE2F00125BA8</string>
+				<string>B3EC9C881A40AE2F00125BA8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B3EC9C8C1A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>WeatherlooTests</string>
+			<key>productName</key>
+			<string>WeatherlooTests</string>
+			<key>productReference</key>
+			<string>B3EC9C8A1A40AE2F00125BA8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>B3EC9C8A1A40AE2F00125BA8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>WeatherlooTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B3EC9C8B1A40AE2F00125BA8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B3EC9C6D1A40AE2F00125BA8</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B3EC9C741A40AE2F00125BA8</string>
+			<key>remoteInfo</key>
+			<string>Weatherloo</string>
+		</dict>
+		<key>B3EC9C8C1A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>B3EC9C741A40AE2F00125BA8</string>
+			<key>targetProxy</key>
+			<string>B3EC9C8B1A40AE2F00125BA8</string>
+		</dict>
+		<key>B3EC9C8D1A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C901A40AE2F00125BA8</string>
+				<string>B3EC9C8E1A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WeatherlooTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C8E1A40AE2F00125BA8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B3EC9C8F1A40AE2F00125BA8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C8F1A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C901A40AE2F00125BA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>WeatherlooTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3EC9C911A40AE2F00125BA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3EC9C901A40AE2F00125BA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EC9C921A40AE2F00125BA8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B3EC9C931A40AE2F00125BA8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B3EC9C941A40AE2F00125BA8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B3EC9C951A40AE2F00125BA8</string>
+				<string>B3EC9C961A40AE2F00125BA8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B3EC9C951A40AE2F00125BA8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1DCB5A154AF9D8E8171ADA20</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Weatherloo/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B3EC9C961A40AE2F00125BA8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DDA2488013D20E5010A8B91F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Weatherloo/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B3EC9C971A40AE2F00125BA8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B3EC9C981A40AE2F00125BA8</string>
+				<string>B3EC9C991A40AE2F00125BA8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B3EC9C981A40AE2F00125BA8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>WeatherlooTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B3EC9C991A40AE2F00125BA8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>WeatherlooTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>BB5BBBD24D65245CDC09B882</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DDA2488013D20E5010A8B91F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0A8C896F200BE20A8F339C0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BB5BBBD24D65245CDC09B882</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>B3EC9C6D1A40AE2F00125BA8</string>
+</dict>
+</plist>
