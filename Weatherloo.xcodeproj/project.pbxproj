@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */; };
+		B3EC9C7D1A40AE2F00125BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */; };
+		B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */; };
+		B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C811A40AE2F00125BA8 /* Images.xcassets */; };
+		B3EC9C851A40AE2F00125BA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */; };
+		B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3EC9C8B1A40AE2F00125BA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EC9C6D1A40AE2F00125BA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3EC9C741A40AE2F00125BA8;
+			remoteInfo = Weatherloo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EC9C791A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3EC9C7F1A40AE2F00125BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3EC9C811A40AE2F00125BA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B3EC9C841A40AE2F00125BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherlooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EC9C8F1A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherlooTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3EC9C721A40AE2F00125BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3EC9C871A40AE2F00125BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3EC9C6C1A40AE2F00125BA8 = {
+			isa = PBXGroup;
+			children = (
+				B3EC9C771A40AE2F00125BA8 /* Weatherloo */,
+				B3EC9C8D1A40AE2F00125BA8 /* WeatherlooTests */,
+				B3EC9C761A40AE2F00125BA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3EC9C761A40AE2F00125BA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */,
+				B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3EC9C771A40AE2F00125BA8 /* Weatherloo */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */,
+				B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */,
+				B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */,
+				B3EC9C811A40AE2F00125BA8 /* Images.xcassets */,
+				B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */,
+				B3EC9C781A40AE2F00125BA8 /* Supporting Files */,
+			);
+			path = Weatherloo;
+			sourceTree = "<group>";
+		};
+		B3EC9C781A40AE2F00125BA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC9C791A40AE2F00125BA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3EC9C8D1A40AE2F00125BA8 /* WeatherlooTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */,
+				B3EC9C8E1A40AE2F00125BA8 /* Supporting Files */,
+			);
+			path = WeatherlooTests;
+			sourceTree = "<group>";
+		};
+		B3EC9C8E1A40AE2F00125BA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC9C8F1A40AE2F00125BA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3EC9C741A40AE2F00125BA8 /* Weatherloo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3EC9C941A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "Weatherloo" */;
+			buildPhases = (
+				B3EC9C711A40AE2F00125BA8 /* Sources */,
+				B3EC9C721A40AE2F00125BA8 /* Frameworks */,
+				B3EC9C731A40AE2F00125BA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weatherloo;
+			productName = Weatherloo;
+			productReference = B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3EC9C891A40AE2F00125BA8 /* WeatherlooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3EC9C971A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "WeatherlooTests" */;
+			buildPhases = (
+				B3EC9C861A40AE2F00125BA8 /* Sources */,
+				B3EC9C871A40AE2F00125BA8 /* Frameworks */,
+				B3EC9C881A40AE2F00125BA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3EC9C8C1A40AE2F00125BA8 /* PBXTargetDependency */,
+			);
+			name = WeatherlooTests;
+			productName = WeatherlooTests;
+			productReference = B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3EC9C6D1A40AE2F00125BA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Connor Cimowsky";
+				TargetAttributes = {
+					B3EC9C741A40AE2F00125BA8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B3EC9C891A40AE2F00125BA8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B3EC9C741A40AE2F00125BA8;
+					};
+				};
+			};
+			buildConfigurationList = B3EC9C701A40AE2F00125BA8 /* Build configuration list for PBXProject "Weatherloo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3EC9C6C1A40AE2F00125BA8;
+			productRefGroup = B3EC9C761A40AE2F00125BA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3EC9C741A40AE2F00125BA8 /* Weatherloo */,
+				B3EC9C891A40AE2F00125BA8 /* WeatherlooTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3EC9C731A40AE2F00125BA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */,
+				B3EC9C851A40AE2F00125BA8 /* LaunchScreen.xib in Resources */,
+				B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3EC9C881A40AE2F00125BA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3EC9C711A40AE2F00125BA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EC9C7D1A40AE2F00125BA8 /* ViewController.swift in Sources */,
+				B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3EC9C861A40AE2F00125BA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3EC9C8C1A40AE2F00125BA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3EC9C741A40AE2F00125BA8 /* Weatherloo */;
+			targetProxy = B3EC9C8B1A40AE2F00125BA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3EC9C7F1A40AE2F00125BA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3EC9C841A40AE2F00125BA8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3EC9C921A40AE2F00125BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3EC9C931A40AE2F00125BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3EC9C951A40AE2F00125BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Weatherloo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B3EC9C961A40AE2F00125BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Weatherloo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B3EC9C981A40AE2F00125BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeatherlooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
+			};
+			name = Debug;
+		};
+		B3EC9C991A40AE2F00125BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeatherlooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3EC9C701A40AE2F00125BA8 /* Build configuration list for PBXProject "Weatherloo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3EC9C921A40AE2F00125BA8 /* Debug */,
+				B3EC9C931A40AE2F00125BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3EC9C941A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "Weatherloo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3EC9C951A40AE2F00125BA8 /* Debug */,
+				B3EC9C961A40AE2F00125BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B3EC9C971A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "WeatherlooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3EC9C981A40AE2F00125BA8 /* Debug */,
+				B3EC9C991A40AE2F00125BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3EC9C6D1A40AE2F00125BA8 /* Project object */;
+}
