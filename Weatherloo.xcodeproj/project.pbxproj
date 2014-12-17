@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A8C7C38E36BC837A62C6143 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBBD24D65245CDC09B882 /* libPods.a */; };
 		B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */; };
 		B3EC9C7D1A40AE2F00125BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */; };
 		B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */; };
 		B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C811A40AE2F00125BA8 /* Images.xcassets */; };
 		B3EC9C851A40AE2F00125BA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */; };
 		B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */; };
+		B3EC9C9E1A40CF0D00125BA8 /* ReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */; };
+		B3EC9CA01A40D33800125BA8 /* Reading-Fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */; };
+		B3EC9CA21A40EC1500125BA8 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9CA11A40EC1500125BA8 /* Reading.swift */; };
+		B3EC9CAA1A40F74400125BA8 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9CA11A40EC1500125BA8 /* Reading.swift */; };
 		F0A8C896F200BE20A8F339C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBBD24D65245CDC09B882 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		1DCB5A154AF9D8E8171ADA20 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1E6E27387BD7A01B77E17A5D /* Pods-WeatherlooTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherlooTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherlooTests/Pods-WeatherlooTests.release.xcconfig"; sourceTree = "<group>"; };
+		3709E17535CE753D21881FF2 /* Pods-WeatherlooTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherlooTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherlooTests/Pods-WeatherlooTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42DB8E5FF77536011F679932 /* libPods-WeatherlooTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherlooTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC9C791A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,8 +47,14 @@
 		B3EC9C8F1A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherlooTests.swift; sourceTree = "<group>"; };
 		B3EC9C9C1A40B17B00125BA8 /* Weatherloo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weatherloo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingTests.swift; sourceTree = "<group>"; };
+		B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Reading-Fixture.json"; sourceTree = "<group>"; };
+		B3EC9CA11A40EC1500125BA8 /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 		BB5BBBD24D65245CDC09B882 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A03D93A186F71D738B58CA /* Pods-Weatherloo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weatherloo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weatherloo/Pods-Weatherloo.debug.xcconfig"; sourceTree = "<group>"; };
+		D1315F889717C851AD8CF7C4 /* libPods-Weatherloo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weatherloo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA2488013D20E5010A8B91F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E393430670CBA2C87CF8AE7D /* Pods-Weatherloo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weatherloo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weatherloo/Pods-Weatherloo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8C7C38E36BC837A62C6143 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				BB5BBBD24D65245CDC09B882 /* libPods.a */,
+				D1315F889717C851AD8CF7C4 /* libPods-Weatherloo.a */,
+				42DB8E5FF77536011F679932 /* libPods-WeatherlooTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +92,10 @@
 			children = (
 				1DCB5A154AF9D8E8171ADA20 /* Pods.debug.xcconfig */,
 				DDA2488013D20E5010A8B91F /* Pods.release.xcconfig */,
+				C7A03D93A186F71D738B58CA /* Pods-Weatherloo.debug.xcconfig */,
+				3709E17535CE753D21881FF2 /* Pods-WeatherlooTests.debug.xcconfig */,
+				E393430670CBA2C87CF8AE7D /* Pods-Weatherloo.release.xcconfig */,
+				1E6E27387BD7A01B77E17A5D /* Pods-WeatherlooTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -104,6 +125,7 @@
 			children = (
 				B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */,
 				B3EC9C7C1A40AE2F00125BA8 /* ViewController.swift */,
+				B3EC9CA11A40EC1500125BA8 /* Reading.swift */,
 				B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */,
 				B3EC9C811A40AE2F00125BA8 /* Images.xcassets */,
 				B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */,
@@ -125,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */,
+				B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */,
 				B3EC9C8E1A40AE2F00125BA8 /* Supporting Files */,
 			);
 			path = WeatherlooTests;
@@ -133,6 +156,7 @@
 		B3EC9C8E1A40AE2F00125BA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */,
 				B3EC9C8F1A40AE2F00125BA8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -164,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3EC9C971A40AE2F00125BA8 /* Build configuration list for PBXNativeTarget "WeatherlooTests" */;
 			buildPhases = (
+				0AAC996E215B4F95D122B935 /* Check Pods Manifest.lock */,
 				B3EC9C861A40AE2F00125BA8 /* Sources */,
 				B3EC9C871A40AE2F00125BA8 /* Frameworks */,
 				B3EC9C881A40AE2F00125BA8 /* Resources */,
+				26A2A5D20E9EDDD12D932B19 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,12 +256,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EC9CA01A40D33800125BA8 /* Reading-Fixture.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0AAC996E215B4F95D122B935 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		26A2A5D20E9EDDD12D932B19 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		33F39E23191806F3C8C2FC70 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +332,7 @@
 			files = (
 				B3EC9C7D1A40AE2F00125BA8 /* ViewController.swift in Sources */,
 				B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */,
+				B3EC9CA21A40EC1500125BA8 /* Reading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EC9C9E1A40CF0D00125BA8 /* ReadingTests.swift in Sources */,
 				B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */,
+				B3EC9CAA1A40F74400125BA8 /* Reading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +479,7 @@
 		};
 		B3EC9C981A40AE2F00125BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCB5A154AF9D8E8171ADA20 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -429,24 +490,35 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = WeatherlooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
 			};
 			name = Debug;
 		};
 		B3EC9C991A40AE2F00125BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA2488013D20E5010A8B91F /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = WeatherlooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
 			};
 			name = Release;
