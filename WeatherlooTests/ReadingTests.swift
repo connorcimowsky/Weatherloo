@@ -74,4 +74,40 @@ class ReadingTests: XCTestCase {
     func test_radiationIsPopulated() {
         XCTAssertEqual(13.6, reading!.radiation!, "Incoming solar radiation should be set correctly.")
     }
+    
+    func test_timeIsFormattedCorrectly() {
+        XCTAssertEqual("3:45 PM", reading!.formattedObservationTime()!, "Time should be formatted correctly.")
+    }
+    
+    func test_temperatureIsFormattedCorrectly() {
+        XCTAssertEqual("3.2 ºC", reading!.formattedTemperature()!, "Temperature should be formatted correctly.")
+    }
+    
+    func test_humidexIsFormattedCorrectly() {
+        XCTAssertEqual("2.6 ºC", reading!.formattedHumidex()!, "Humidex should be formatted correctly.")
+    }
+    
+    func test_windChillIsFormattedCorrectly() {
+        XCTAssertEqual("-1.3 ºC", reading!.formattedWindChill()!, "Windchill should be formatted correctly.")
+    }
+    
+    func test_relativeHumidityIsFormattedCorrectly() {
+        XCTAssertEqual("98.9%", reading!.formattedRelativeHumidity()!, "Relative humidity should be formatted correctly.")
+    }
+    
+    func test_dewPointIsFormattedCorrectly() {
+        XCTAssertEqual("2.3 ºC", reading!.formattedDewPoint()!, "Dew point should be formatted correctly.")
+    }
+    
+    func test_windIsFormattedCorrectly() {
+        XCTAssertEqual("28 km/h, 225º", reading!.formattedWindSpeedAndDirection()!, "Wind speed and direction should be formatted correctly.")
+    }
+    
+    func test_pressureIsFormattedCorrectly() {
+        XCTAssertEqual("100.6 kPa, Falling", reading!.formattedPressureAndPressureTrend()!, "Pressure and pressure trend should be formatted correctly.")
+    }
+    
+    func test_radiationIsFormattedCorrectly() {
+        XCTAssertEqual("13.6 W/m²", reading!.formattedRadiation()!, "Incoming solar radiation should be formatted correctly.")
+    }
 }

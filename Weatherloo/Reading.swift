@@ -50,7 +50,7 @@ extension Reading {
         dateFormatter.timeStyle = .ShortStyle;
         
         if let observationTime = self.observationTime {
-            return "Current Reading: \(dateFormatter.stringFromDate(observationTime))"
+            return dateFormatter.stringFromDate(observationTime)
         }
         
         return nil
@@ -58,7 +58,7 @@ extension Reading {
     
     func formattedTemperature() -> String? {
         if let temperature = self.temperature {
-            return "Temperature: \(NSNumberFormatter.localizedStringFromNumber(temperature, numberStyle: .DecimalStyle)) ºC"
+            return "\(NSNumberFormatter.localizedStringFromNumber(temperature, numberStyle: .DecimalStyle)) ºC"
         }
         
         return nil
@@ -66,7 +66,7 @@ extension Reading {
     
     func formattedHumidex() -> String? {
         if let humidex = self.humidex {
-            return "Humidex: \(NSNumberFormatter.localizedStringFromNumber(humidex, numberStyle: .DecimalStyle)) ºC"
+            return "\(NSNumberFormatter.localizedStringFromNumber(humidex, numberStyle: .DecimalStyle)) ºC"
         }
         
         return nil
@@ -74,7 +74,7 @@ extension Reading {
     
     func formattedWindChill() -> String? {
         if let windChill = self.windChill {
-            return "Windchill: \(NSNumberFormatter.localizedStringFromNumber(windChill, numberStyle: .DecimalStyle)) ºC"
+            return "\(NSNumberFormatter.localizedStringFromNumber(windChill, numberStyle: .DecimalStyle)) ºC"
         }
         
         return nil
@@ -82,7 +82,7 @@ extension Reading {
     
     func formattedRelativeHumidity() -> String? {
         if let relativeHumidity = self.relativeHumidity {
-            return "Relative Humidity: \(NSNumberFormatter.localizedStringFromNumber(relativeHumidity, numberStyle: .DecimalStyle))%"
+            return "\(NSNumberFormatter.localizedStringFromNumber(relativeHumidity, numberStyle: .DecimalStyle))%"
         }
         
         return nil
@@ -90,7 +90,7 @@ extension Reading {
     
     func formattedDewPoint() -> String? {
         if let dewPoint = self.dewPoint {
-            return "Dew Point: \(NSNumberFormatter.localizedStringFromNumber(dewPoint, numberStyle: .DecimalStyle)) ºC"
+            return "\(NSNumberFormatter.localizedStringFromNumber(dewPoint, numberStyle: .DecimalStyle)) ºC"
         }
         
         return nil
@@ -99,7 +99,7 @@ extension Reading {
     func formattedWindSpeedAndDirection() -> String? {
         if let windSpeed = self.windSpeed {
             if let windDirection = self.windDirection {
-                return "Wind Speed: \(NSNumberFormatter.localizedStringFromNumber(windSpeed, numberStyle: .DecimalStyle)) km/h, \(NSNumberFormatter.localizedStringFromNumber(windDirection, numberStyle: .DecimalStyle))º"
+                return "\(NSNumberFormatter.localizedStringFromNumber(windSpeed, numberStyle: .DecimalStyle)) km/h, \(NSNumberFormatter.localizedStringFromNumber(windDirection, numberStyle: .DecimalStyle))º"
             }
         }
         
@@ -109,7 +109,7 @@ extension Reading {
     func formattedPressureAndPressureTrend() -> String? {
         if let pressure = self.pressure {
             if let pressureTrend = self.pressureTrend {
-                return "Pressure: \(NSNumberFormatter.localizedStringFromNumber(pressure, numberStyle: .DecimalStyle)) kPa, \(pressureTrend)"
+                return "\(NSNumberFormatter.localizedStringFromNumber(pressure, numberStyle: .DecimalStyle)) kPa, \(pressureTrend)"
             }
         }
         
@@ -118,49 +118,45 @@ extension Reading {
     
     func formattedRadiation() -> String? {
         if let radiation = self.radiation {
-            return "Incoming Radiation: \(NSNumberFormatter.localizedStringFromNumber(radiation, numberStyle: .DecimalStyle)) W/m²"
+            return "\(NSNumberFormatter.localizedStringFromNumber(radiation, numberStyle: .DecimalStyle)) W/m²"
         }
         
         return nil
     }
     
-    func formattedWeatherConditions() -> [String] {
-        var formattedWeatherConditions: [String] = []
+    func formattedWeatherConditions() -> [(name: String, value: String)] {
+        var formattedWeatherConditions: [(name: String, value: String)] = []
         
         if let formattedTemperature = self.formattedTemperature() {
-            formattedWeatherConditions.append(formattedTemperature)
+            formattedWeatherConditions.append(name: "Temperature", value: formattedTemperature)
         }
         
         if let formattedHumidex = self.formattedHumidex() {
-            formattedWeatherConditions.append(formattedHumidex)
+            formattedWeatherConditions.append(name: "Humidex", value: formattedHumidex)
         }
         
         if let formattedWindChill = self.formattedWindChill() {
-            formattedWeatherConditions.append(formattedWindChill)
+            formattedWeatherConditions.append(name: "Windchill", value: formattedWindChill)
         }
         
         if let formattedRelativeHumidity = self.formattedRelativeHumidity() {
-            formattedWeatherConditions.append(formattedRelativeHumidity)
+            formattedWeatherConditions.append(name: "Relative Humidity", value: formattedRelativeHumidity)
         }
         
         if let formattedDewPoint = self.formattedDewPoint() {
-            formattedWeatherConditions.append(formattedDewPoint)
+            formattedWeatherConditions.append(name: "Dew Point", value: formattedDewPoint)
         }
         
         if let formattedWindSpeedAndDirection = self.formattedWindSpeedAndDirection() {
-            formattedWeatherConditions.append(formattedWindSpeedAndDirection)
+            formattedWeatherConditions.append(name: "Wind Speed", value: formattedWindSpeedAndDirection)
         }
         
         if let formattedPressureAndPressureTrend = self.formattedPressureAndPressureTrend() {
-            formattedWeatherConditions.append(formattedPressureAndPressureTrend)
+            formattedWeatherConditions.append(name: "Pressure", value: formattedPressureAndPressureTrend)
         }
         
         if let formattedRadiation = self.formattedRadiation() {
-            formattedWeatherConditions.append(formattedRadiation)
-        }
-        
-        if let formattedTemperature = self.formattedTemperature() {
-            formattedWeatherConditions.append(formattedTemperature)
+            formattedWeatherConditions.append(name: "Incoming Radiation", value: formattedRadiation)
         }
         
         return formattedWeatherConditions
