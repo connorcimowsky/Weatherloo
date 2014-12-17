@@ -41,3 +41,128 @@ struct Reading {
         }
     }
 }
+
+extension Reading {
+    func formattedObservationTime() -> String? {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.timeZone = self.observationTimeZone
+        dateFormatter.dateStyle = .NoStyle;
+        dateFormatter.timeStyle = .ShortStyle;
+        
+        if let observationTime = self.observationTime {
+            return "Current Reading: \(dateFormatter.stringFromDate(observationTime))"
+        }
+        
+        return nil
+    }
+    
+    func formattedTemperature() -> String? {
+        if let temperature = self.temperature {
+            return "Temperature: \(NSNumberFormatter.localizedStringFromNumber(temperature, numberStyle: .DecimalStyle)) ºC"
+        }
+        
+        return nil
+    }
+    
+    func formattedHumidex() -> String? {
+        if let humidex = self.humidex {
+            return "Humidex: \(NSNumberFormatter.localizedStringFromNumber(humidex, numberStyle: .DecimalStyle)) ºC"
+        }
+        
+        return nil
+    }
+    
+    func formattedWindChill() -> String? {
+        if let windChill = self.windChill {
+            return "Windchill: \(NSNumberFormatter.localizedStringFromNumber(windChill, numberStyle: .DecimalStyle)) ºC"
+        }
+        
+        return nil
+    }
+    
+    func formattedRelativeHumidity() -> String? {
+        if let relativeHumidity = self.relativeHumidity {
+            return "Relative Humidity: \(NSNumberFormatter.localizedStringFromNumber(relativeHumidity, numberStyle: .DecimalStyle))%"
+        }
+        
+        return nil
+    }
+    
+    func formattedDewPoint() -> String? {
+        if let dewPoint = self.dewPoint {
+            return "Dew Point: \(NSNumberFormatter.localizedStringFromNumber(dewPoint, numberStyle: .DecimalStyle)) ºC"
+        }
+        
+        return nil
+    }
+    
+    func formattedWindSpeedAndDirection() -> String? {
+        if let windSpeed = self.windSpeed {
+            if let windDirection = self.windDirection {
+                return "Wind Speed: \(NSNumberFormatter.localizedStringFromNumber(windSpeed, numberStyle: .DecimalStyle)) km/h, \(NSNumberFormatter.localizedStringFromNumber(windDirection, numberStyle: .DecimalStyle))º"
+            }
+        }
+        
+        return nil
+    }
+    
+    func formattedPressureAndPressureTrend() -> String? {
+        if let pressure = self.pressure {
+            if let pressureTrend = self.pressureTrend {
+                return "Pressure: \(NSNumberFormatter.localizedStringFromNumber(pressure, numberStyle: .DecimalStyle)) kPa, \(pressureTrend)"
+            }
+        }
+        
+        return nil
+    }
+    
+    func formattedRadiation() -> String? {
+        if let radiation = self.radiation {
+            return "Incoming Radiation: \(NSNumberFormatter.localizedStringFromNumber(radiation, numberStyle: .DecimalStyle)) W/m²"
+        }
+        
+        return nil
+    }
+    
+    func formattedWeatherConditions() -> [String] {
+        var formattedWeatherConditions: [String] = []
+        
+        if let formattedTemperature = self.formattedTemperature() {
+            formattedWeatherConditions.append(formattedTemperature)
+        }
+        
+        if let formattedHumidex = self.formattedHumidex() {
+            formattedWeatherConditions.append(formattedHumidex)
+        }
+        
+        if let formattedWindChill = self.formattedWindChill() {
+            formattedWeatherConditions.append(formattedWindChill)
+        }
+        
+        if let formattedRelativeHumidity = self.formattedRelativeHumidity() {
+            formattedWeatherConditions.append(formattedRelativeHumidity)
+        }
+        
+        if let formattedDewPoint = self.formattedDewPoint() {
+            formattedWeatherConditions.append(formattedDewPoint)
+        }
+        
+        if let formattedWindSpeedAndDirection = self.formattedWindSpeedAndDirection() {
+            formattedWeatherConditions.append(formattedWindSpeedAndDirection)
+        }
+        
+        if let formattedPressureAndPressureTrend = self.formattedPressureAndPressureTrend() {
+            formattedWeatherConditions.append(formattedPressureAndPressureTrend)
+        }
+        
+        if let formattedRadiation = self.formattedRadiation() {
+            formattedWeatherConditions.append(formattedRadiation)
+        }
+        
+        if let formattedTemperature = self.formattedTemperature() {
+            formattedWeatherConditions.append(formattedTemperature)
+        }
+        
+        return formattedWeatherConditions
+    }
+}
