@@ -38,10 +38,8 @@ class WeatherTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if let reading = self.currentReading {
-            if let formattedObservationTime = reading.formattedObservationTime() {
-                return "Current Reading: \(formattedObservationTime)"
-            }
+        if let formattedObservationTime = self.currentReading?.formattedObservationTime() {
+            return "Current Reading: \(formattedObservationTime)"
         }
         
         return nil
