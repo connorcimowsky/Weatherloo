@@ -17,47 +17,15 @@ class WeatherTableViewController: UITableViewController {
     var currentReading: Reading?
     
     override func viewDidLoad() {
-        requestCurrentReading()
+        self.requestCurrentReading()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let formattedWeatherConditions = currentReading?.formattedWeatherConditions() {
+        if let formattedWeatherConditions = self.currentReading?.formattedWeatherConditions() {
             return formattedWeatherConditions.count
         } else {
             return 0
         }
-    }
-    
-    func requestCurrentReading() {
-        let endpointURL = NSURL(string: endpoint)
-        let request = NSURLRequest(URL: endpointURL!, cachePolicy: .ReloadIgnoringLocalCacheData, timeoutInterval: 10.0)
-        NSURLConnection.sendAsynchronousRequest(request, queue: self.processingQueue) { (response, data, connectionError) in
-            
-            var reading: Reading?
-            
-            if connectionError == nil {
-                var jsonError: NSError?
-                if let responseDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &jsonError) as NSDictionary? {
-                    if jsonError == nil {
-                        reading = Reading(responseDictionary: responseDictionary)
-                    } else {
-                        println("JSON deserialization error: \(jsonError?.localizedDescription)")
-                    }
-                }
-            } else {
-                println(connectionError.localizedDescription)
-            }
-            
-            self.currentReading = reading
-            
-            dispatch_async(dispatch_get_main_queue()) {
-                self.updateUI()
-            }
-        }
-    }
-    
-    func updateUI() {
-        self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -82,5 +50,37 @@ class WeatherTableViewController: UITableViewController {
         }
         
         return nil
+    }
+    
+    func requestCurrentReading() {
+        let endpointURL = NSURL(string: endpoint)
+        let request = NSURLRequest(URL: endpointURL!, cachePolicy: .ReloadIgnoringLocalCacheData, timeoutInterval: 10.0)
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: self.processingQueue) { (response, data, connectionError) in
+            var reading: Reading?
+            
+            if connectionError == nil {
+                var jsonError: NSError?
+                if let responseDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &jsonError) as NSDictionary? {
+                    if jsonError == nil {
+                        reading = Reading(responseDictionary: responseDictionary)
+                    } else {
+                        println("JSON deserialization error: \(jsonError?.localizedDescription)")
+                    }
+                }
+            } else {
+                println("Connection error: \(connectionError.localizedDescription)")
+            }
+            
+            self.currentReading = reading
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                self.updateTableView()
+            }
+        }
+    }
+    
+    func updateTableView() {
+        self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
     }
 }
