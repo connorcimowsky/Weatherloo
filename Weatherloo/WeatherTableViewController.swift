@@ -12,9 +12,9 @@ private let endpoint = "https://api.uwaterloo.ca/v2/weather/current.json"
 private let cellIdentifier = "WeatherTableViewControllerCellIdentifier"
 
 class WeatherTableViewController: UITableViewController {
-    
     var processingQueue: NSOperationQueue = NSOperationQueue()
     var currentReading: Reading?
+    @IBOutlet weak var statusItem: StatusBarButtonItem!
     
     override func viewDidLoad() {
         self.requestCurrentReading()
@@ -45,9 +45,16 @@ class WeatherTableViewController: UITableViewController {
         return nil
     }
     
+    @IBAction func refreshPressed(sender: UIBarButtonItem) {
+        requestCurrentReading()
+    }
+    
     func requestCurrentReading() {
         let endpointURL = NSURL(string: endpoint)
         let request = NSURLRequest(URL: endpointURL!, cachePolicy: .ReloadIgnoringLocalCacheData, timeoutInterval: 10.0)
+        
+        self.statusItem.text = "Fetching data…"
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
         
         NSURLConnection.sendAsynchronousRequest(request, queue: self.processingQueue) { (response, data, connectionError) in
             var reading: Reading?
@@ -68,12 +75,14 @@ class WeatherTableViewController: UITableViewController {
             self.currentReading = reading
             
             dispatch_async(dispatch_get_main_queue()) {
-                self.updateTableView()
+                self.processReading()
             }
         }
     }
     
-    func updateTableView() {
+    func processReading() {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
         self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
+        self.statusItem.text = "Updated \(NSDate().timeAgo().lowercaseString)"
     }
 }

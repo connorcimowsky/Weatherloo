@@ -39,7 +39,20 @@
                             <outlet property="delegate" destination="3c6-nV-UgA" id="PCo-x8-iyi"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="refresh" id="Wdm-e2-JZ1">
+                            <connections>
+                                <action selector="refreshPressed:" destination="3c6-nV-UgA" id="OBA-Rk-wwQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="H6n-za-nbn"/>
+                        <barButtonItem title="Status" id="dwd-vq-wgv"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="PkF-2H-3QS"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Weatherloo" id="m6a-xu-Q62"/>
+                    <connections>
+                        <outlet property="statusItem" destination="dwd-vq-wgv" id="lxb-TV-gqu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWv-ua-r9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,13 +61,16 @@
         <!--Navigation Controller-->
         <scene sceneID="ft1-Y7-adg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wff-Eq-6sM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Wff-Eq-6sM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ukB-Rj-69D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FmM-wT-eDc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="3c6-nV-UgA" kind="relationship" relationship="rootViewController" id="UJc-GZ-35F"/>
                     </connections>
