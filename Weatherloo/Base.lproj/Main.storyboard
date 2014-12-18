@@ -46,12 +46,12 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="H6n-za-nbn"/>
-                        <barButtonItem title="Status" id="dwd-vq-wgv"/>
+                        <barButtonItem title="Status" id="dwd-vq-wgv" customClass="StatusBarButtonItem" customModule="Weatherloo" customModuleProvider="target"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="PkF-2H-3QS"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Weatherloo" id="m6a-xu-Q62"/>
                     <connections>
-                        <outlet property="statusItem" destination="dwd-vq-wgv" id="lxb-TV-gqu"/>
+                        <outlet property="statusItem" destination="dwd-vq-wgv" id="UVy-vF-lGQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWv-ua-r9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
