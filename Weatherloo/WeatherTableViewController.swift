@@ -29,17 +29,12 @@ class WeatherTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? UITableViewCell
+        var cell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell
         
-        if cell == nil {
-            cell = UITableViewCell(style: .Value1, reuseIdentifier: cellIdentifier)
-            cell!.selectionStyle = .None
-        }
+        cell.textLabel?.text = self.currentReading?.formattedWeatherConditions()[indexPath.row].name
+        cell.detailTextLabel?.text = self.currentReading?.formattedWeatherConditions()[indexPath.row].value
         
-        cell?.textLabel?.text = self.currentReading?.formattedWeatherConditions()[indexPath.row].name
-        cell?.detailTextLabel?.text = self.currentReading?.formattedWeatherConditions()[indexPath.row].value
-        
-        return cell!
+        return cell
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
