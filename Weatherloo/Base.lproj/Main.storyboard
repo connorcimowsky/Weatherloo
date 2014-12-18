@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wff-Eq-6sM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Weatherloo-->
+        <scene sceneID="XKj-Nf-bqh">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="3c6-nV-UgA" customClass="WeatherTableViewController" customModule="Weatherloo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="80J-jU-Rv3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Bcb-te-B2x">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bcb-te-B2x" id="Qz7-p0-SOU">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3c6-nV-UgA" id="VFG-gr-8JK"/>
+                            <outlet property="delegate" destination="3c6-nV-UgA" id="PCo-x8-iyi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Weatherloo" id="m6a-xu-Q62"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWv-ua-r9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1633" y="447"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ft1-Y7-adg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wff-Eq-6sM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ukB-Rj-69D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3c6-nV-UgA" kind="relationship" relationship="rootViewController" id="UJc-GZ-35F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afQ-wS-bbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821" y="447"/>
         </scene>
     </scenes>
 </document>
