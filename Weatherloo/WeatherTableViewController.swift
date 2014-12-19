@@ -16,9 +16,15 @@ class WeatherTableViewController: UITableViewController {
     var currentReading: Reading?
     @IBOutlet weak var statusItem: StatusBarButtonItem!
     
+    // MARK: - UIViewController
+    
     override func viewDidLoad() {
         self.requestCurrentReading()
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl!.addTarget(self, action: "refreshPressed:", forControlEvents: .ValueChanged)
     }
+    
+    // MARK: - UITableViewDataSource
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let formattedWeatherConditions = self.currentReading?.formattedWeatherConditions() {
@@ -45,7 +51,9 @@ class WeatherTableViewController: UITableViewController {
         return nil
     }
     
-    @IBAction func refreshPressed(sender: UIBarButtonItem) {
+    // MARK: - Internal Methods
+    
+    @IBAction func refreshPressed(sender: AnyObject) {
         requestCurrentReading()
     }
     
@@ -81,6 +89,7 @@ class WeatherTableViewController: UITableViewController {
     }
     
     func processReading() {
+        self.refreshControl?.endRefreshing()
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
         self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
         self.statusItem.text = "Updated \(NSDate().timeAgo().lowercaseString)"
