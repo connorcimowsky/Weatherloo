@@ -92,6 +92,12 @@ class WeatherTableViewController: UITableViewController {
         self.refreshControl?.endRefreshing()
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
         self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
-        self.statusItem.text = "Updated \(NSDate().timeAgo().lowercaseString)"
+        
+        if self.currentReading != nil {
+            self.statusItem.text = "Updated \(NSDate().timeAgo().lowercaseString)"
+        } else {
+            self.statusItem.text = "Weather station unavailable"
+        }
+
     }
 }
