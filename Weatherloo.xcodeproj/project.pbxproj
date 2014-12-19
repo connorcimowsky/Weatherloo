@@ -37,6 +37,7 @@
 		1E6E27387BD7A01B77E17A5D /* Pods-WeatherlooTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherlooTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherlooTests/Pods-WeatherlooTests.release.xcconfig"; sourceTree = "<group>"; };
 		3709E17535CE753D21881FF2 /* Pods-WeatherlooTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherlooTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherlooTests/Pods-WeatherlooTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42DB8E5FF77536011F679932 /* libPods-WeatherlooTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherlooTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B352D0C31A44EB030070CFEC /* Weatherloo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weatherloo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarButtonItem.swift; sourceTree = "<group>"; };
 		B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +49,6 @@
 		B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherlooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC9C8F1A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherlooTests.swift; sourceTree = "<group>"; };
-		B3EC9C9C1A40B17B00125BA8 /* Weatherloo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weatherloo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingTests.swift; sourceTree = "<group>"; };
 		B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Reading-Fixture.json"; sourceTree = "<group>"; };
 		B3EC9CA11A40EC1500125BA8 /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		B3EC9C781A40AE2F00125BA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3EC9C9C1A40B17B00125BA8 /* Weatherloo-Bridging-Header.h */,
+				B352D0C31A44EB030070CFEC /* Weatherloo-Bridging-Header.h */,
 				B3EC9C791A40AE2F00125BA8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -465,7 +465,7 @@
 				INFOPLIST_FILE = Weatherloo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo/Weatherloo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -477,7 +477,7 @@
 				INFOPLIST_FILE = Weatherloo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo/Weatherloo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -501,7 +501,7 @@
 				INFOPLIST_FILE = WeatherlooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo/Weatherloo-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
 			};
 			name = Debug;
@@ -522,7 +522,7 @@
 				INFOPLIST_FILE = WeatherlooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo/Weatherloo-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weatherloo.app/Weatherloo";
 			};
 			name = Release;
