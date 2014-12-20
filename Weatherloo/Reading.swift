@@ -22,6 +22,8 @@ struct Reading {
     var pressureTrend: String?
     var radiation: Double?
     
+    // MARK: - Lifecycle
+    
     init(responseDictionary: NSDictionary) {
         if let observationData = responseDictionary["data"] as? NSDictionary {
             if let observationTimeString = observationData["observation_time"] as? String {
