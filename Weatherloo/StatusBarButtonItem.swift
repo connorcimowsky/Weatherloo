@@ -21,6 +21,8 @@ class StatusBarButtonItem: UIBarButtonItem {
         }
     }
     
+    // MARK: - Lifecycle
+    
     required init(coder aDecoder: NSCoder) {
         self.label = UILabel()
         self.label.font = UIFont.systemFontOfSize(UIFont.systemFontSize())
