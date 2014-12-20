@@ -19,9 +19,16 @@ class WeatherTableViewController: UITableViewController {
     // MARK: - UIViewController
     
     override func viewDidLoad() {
-        self.requestCurrentReading()
         self.refreshControl = UIRefreshControl()
         self.refreshControl!.addTarget(self, action: "refreshPressed:", forControlEvents: .ValueChanged)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     // MARK: - UITableViewDataSource
@@ -52,6 +59,10 @@ class WeatherTableViewController: UITableViewController {
     }
     
     // MARK: - Internal Methods
+    
+    func applicationDidBecomeActive(notification: NSNotification) {
+        requestCurrentReading()
+    }
     
     @IBAction func refreshPressed(sender: AnyObject) {
         requestCurrentReading()
