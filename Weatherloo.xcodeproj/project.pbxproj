@@ -14,6 +14,9 @@
 		B30F4C1F1A463D7200E744A2 /* Weatherloo Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B30F4C131A463D7200E744A2 /* Weatherloo Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B36EC1EA1A422A5100391530 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */; };
 		B36EC1F21A4336C100391530 /* StatusBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */; };
+		B38BAAD11A47437B0047636E /* WeatherlooData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAAD01A47437B0047636E /* WeatherlooData.swift */; };
+		B38BAAD21A4748220047636E /* WeatherlooData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAAD01A47437B0047636E /* WeatherlooData.swift */; };
+		B38BAAD31A4748340047636E /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9CA11A40EC1500125BA8 /* Reading.swift */; };
 		B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */; };
 		B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */; };
 		B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C811A40AE2F00125BA8 /* Images.xcassets */; };
@@ -23,6 +26,7 @@
 		B3EC9CA01A40D33800125BA8 /* Reading-Fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */; };
 		B3EC9CA21A40EC1500125BA8 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9CA11A40EC1500125BA8 /* Reading.swift */; };
 		B3EC9CAA1A40F74400125BA8 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9CA11A40EC1500125BA8 /* Reading.swift */; };
+		B817D2257820BE9F6D69FEF8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBBD24D65245CDC09B882 /* libPods.a */; };
 		F0A8C896F200BE20A8F339C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBBD24D65245CDC09B882 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,7 @@
 		B352D0C31A44EB030070CFEC /* Weatherloo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weatherloo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarButtonItem.swift; sourceTree = "<group>"; };
+		B38BAAD01A47437B0047636E /* WeatherlooData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weatherloo/WeatherlooData.swift; sourceTree = "<group>"; };
 		B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC9C791A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +86,7 @@
 		B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherlooTests.swift; sourceTree = "<group>"; };
 		B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingTests.swift; sourceTree = "<group>"; };
 		B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Reading-Fixture.json"; sourceTree = "<group>"; };
-		B3EC9CA11A40EC1500125BA8 /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
+		B3EC9CA11A40EC1500125BA8 /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reading.swift; path = Weatherloo/Reading.swift; sourceTree = "<group>"; };
 		BB5BBBD24D65245CDC09B882 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A03D93A186F71D738B58CA /* Pods-Weatherloo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weatherloo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weatherloo/Pods-Weatherloo.debug.xcconfig"; sourceTree = "<group>"; };
 		D1315F889717C851AD8CF7C4 /* libPods-Weatherloo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weatherloo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30F4C151A463D7200E744A2 /* NotificationCenter.framework in Frameworks */,
+				B817D2257820BE9F6D69FEF8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +165,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B38BAACF1A4743370047636E /* Weatherloo Data */ = {
+			isa = PBXGroup;
+			children = (
+				B3EC9CA11A40EC1500125BA8 /* Reading.swift */,
+				B38BAAD01A47437B0047636E /* WeatherlooData.swift */,
+			);
+			name = "Weatherloo Data";
+			sourceTree = "<group>";
+		};
 		B3EC9C6C1A40AE2F00125BA8 = {
 			isa = PBXGroup;
 			children = (
+				B38BAACF1A4743370047636E /* Weatherloo Data */,
 				B3EC9C771A40AE2F00125BA8 /* Weatherloo */,
 				B3EC9C8D1A40AE2F00125BA8 /* WeatherlooTests */,
 				B30F4C161A463D7200E744A2 /* Weatherloo Widget */,
@@ -187,7 +203,6 @@
 				B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */,
 				B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */,
 				B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */,
-				B3EC9CA11A40EC1500125BA8 /* Reading.swift */,
 				B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */,
 				B3EC9C811A40AE2F00125BA8 /* Images.xcassets */,
 				B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */,
@@ -231,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B30F4C221A463D7200E744A2 /* Build configuration list for PBXNativeTarget "Weatherloo Widget" */;
 			buildPhases = (
+				2C0E8906FE2177A46E27BB3D /* Check Pods Manifest.lock */,
 				B30F4C0F1A463D7200E744A2 /* Sources */,
 				B30F4C101A463D7200E744A2 /* Frameworks */,
 				B30F4C111A463D7200E744A2 /* Resources */,
+				D578BA4BB2A5D7BD6216BED7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -386,6 +403,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2C0E8906FE2177A46E27BB3D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		33F39E23191806F3C8C2FC70 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +448,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D578BA4BB2A5D7BD6216BED7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,6 +471,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30F4C1A1A463D7200E744A2 /* TodayViewController.swift in Sources */,
+				B38BAAD21A4748220047636E /* WeatherlooData.swift in Sources */,
+				B38BAAD31A4748340047636E /* Reading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38BAAD11A47437B0047636E /* WeatherlooData.swift in Sources */,
 				B36EC1F21A4336C100391530 /* StatusBarButtonItem.swift in Sources */,
 				B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */,
 				B36EC1EA1A422A5100391530 /* WeatherTableViewController.swift in Sources */,
@@ -485,6 +535,7 @@
 /* Begin XCBuildConfiguration section */
 		B30F4C201A463D7200E744A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCB5A154AF9D8E8171ADA20 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -494,16 +545,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo/Weatherloo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		B30F4C211A463D7200E744A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA2488013D20E5010A8B91F /* Pods.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Weatherloo Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Weatherloo/Weatherloo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -666,6 +720,7 @@
 				B30F4C211A463D7200E744A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3EC9C701A40AE2F00125BA8 /* Build configuration list for PBXProject "Weatherloo" */ = {
 			isa = XCConfigurationList;
