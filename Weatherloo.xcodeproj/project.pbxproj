@@ -20,15 +20,18 @@
 		B36EC1EA1A422A5100391530 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */; };
 		B36EC1F21A4336C100391530 /* StatusBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */; };
 		B38BAABB1A472B3D0047636E /* WeatherlooData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAABA1A472B3D0047636E /* WeatherlooData.swift */; };
+		B38BAABD1A473C340047636E /* Reading+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAABC1A473C340047636E /* Reading+Formatting.swift */; };
+		B38BAAC11A473CA10047636E /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAAC01A473CA10047636E /* Reading.swift */; };
+		B38BAAC31A473D190047636E /* ReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAAC21A473D190047636E /* ReadingTests.swift */; };
+		B38BAAC51A473D780047636E /* Weatherloo+FormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAAC41A473D780047636E /* Weatherloo+FormattingTests.swift */; };
+		B38BAACC1A473F490047636E /* Reading+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAABC1A473C340047636E /* Reading+Formatting.swift */; };
+		B38BAACE1A4740840047636E /* Reading-Fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = B38BAACD1A4740840047636E /* Reading-Fixture.json */; };
 		B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */; };
 		B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */; };
 		B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C811A40AE2F00125BA8 /* Images.xcassets */; };
 		B3EC9C851A40AE2F00125BA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */; };
 		B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */; };
-		B3EC9C9E1A40CF0D00125BA8 /* ReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */; };
 		B3EC9CA01A40D33800125BA8 /* Reading-Fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */; };
-		B3EC9CA21A40EC1500125BA8 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9CA11A40EC1500125BA8 /* Reading.swift */; };
-		B3EC9CAA1A40F74400125BA8 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9CA11A40EC1500125BA8 /* Reading.swift */; };
 		F0A8C896F200BE20A8F339C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBBD24D65245CDC09B882 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +118,11 @@
 		B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarButtonItem.swift; sourceTree = "<group>"; };
 		B38BAABA1A472B3D0047636E /* WeatherlooData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherlooData.swift; sourceTree = "<group>"; };
+		B38BAABC1A473C340047636E /* Reading+Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reading+Formatting.swift"; sourceTree = "<group>"; };
+		B38BAAC01A473CA10047636E /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
+		B38BAAC21A473D190047636E /* ReadingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingTests.swift; sourceTree = "<group>"; };
+		B38BAAC41A473D780047636E /* Weatherloo+FormattingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weatherloo+FormattingTests.swift"; sourceTree = "<group>"; };
+		B38BAACD1A4740840047636E /* Reading-Fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Reading-Fixture.json"; sourceTree = "<group>"; };
 		B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC9C791A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,9 +132,7 @@
 		B3EC9C8A1A40AE2F00125BA8 /* WeatherlooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherlooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC9C8F1A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherlooTests.swift; sourceTree = "<group>"; };
-		B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingTests.swift; sourceTree = "<group>"; };
 		B3EC9C9F1A40D33800125BA8 /* Reading-Fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Reading-Fixture.json"; sourceTree = "<group>"; };
-		B3EC9CA11A40EC1500125BA8 /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 		BB5BBBD24D65245CDC09B882 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A03D93A186F71D738B58CA /* Pods-Weatherloo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weatherloo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weatherloo/Pods-Weatherloo.debug.xcconfig"; sourceTree = "<group>"; };
 		D1315F889717C851AD8CF7C4 /* libPods-Weatherloo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weatherloo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				B32490771A472ADA003FE12D /* WeatherlooData.h */,
+				B38BAAC01A473CA10047636E /* Reading.swift */,
 				B38BAABA1A472B3D0047636E /* WeatherlooData.swift */,
 				B32490751A472ADA003FE12D /* Supporting Files */,
 			);
@@ -242,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				B32490861A472ADA003FE12D /* WeatherlooDataTests.swift */,
+				B38BAAC21A473D190047636E /* ReadingTests.swift */,
 				B32490841A472ADA003FE12D /* Supporting Files */,
 			);
 			path = WeatherlooDataTests;
@@ -250,6 +258,7 @@
 		B32490841A472ADA003FE12D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B38BAACD1A4740840047636E /* Reading-Fixture.json */,
 				B32490851A472ADA003FE12D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -287,7 +296,7 @@
 				B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */,
 				B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */,
 				B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */,
-				B3EC9CA11A40EC1500125BA8 /* Reading.swift */,
+				B38BAABC1A473C340047636E /* Reading+Formatting.swift */,
 				B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */,
 				B3EC9C811A40AE2F00125BA8 /* Images.xcassets */,
 				B3EC9C831A40AE2F00125BA8 /* LaunchScreen.xib */,
@@ -309,7 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				B3EC9C901A40AE2F00125BA8 /* WeatherlooTests.swift */,
-				B3EC9C9D1A40CF0D00125BA8 /* ReadingTests.swift */,
+				B38BAAC41A473D780047636E /* Weatherloo+FormattingTests.swift */,
 				B3EC9C8E1A40AE2F00125BA8 /* Supporting Files */,
 			);
 			path = WeatherlooTests;
@@ -505,6 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38BAACE1A4740840047636E /* Reading-Fixture.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38BAAC11A473CA10047636E /* Reading.swift in Sources */,
 				B38BAABB1A472B3D0047636E /* WeatherlooData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38BAAC31A473D190047636E /* ReadingTests.swift in Sources */,
 				B32490871A472ADA003FE12D /* WeatherlooDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,10 +632,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38BAABD1A473C340047636E /* Reading+Formatting.swift in Sources */,
 				B36EC1F21A4336C100391530 /* StatusBarButtonItem.swift in Sources */,
 				B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */,
 				B36EC1EA1A422A5100391530 /* WeatherTableViewController.swift in Sources */,
-				B3EC9CA21A40EC1500125BA8 /* Reading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,9 +643,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EC9C9E1A40CF0D00125BA8 /* ReadingTests.swift in Sources */,
+				B38BAACC1A473F490047636E /* Reading+Formatting.swift in Sources */,
 				B3EC9C911A40AE2F00125BA8 /* WeatherlooTests.swift in Sources */,
-				B3EC9CAA1A40F74400125BA8 /* Reading.swift in Sources */,
+				B38BAAC51A473D780047636E /* Weatherloo+FormattingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

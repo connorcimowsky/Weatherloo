@@ -1,0 +1,33 @@
+{
+  "meta":{
+    "requests":-1,
+    "timestamp":1418762975,
+    "status":200,
+    "message":"Request successful",
+    "method_id":1451,
+    "method":{
+      
+    }
+  },
+  "data":{
+    "latitude":43.4738,
+    "longitude":-80.5576,
+    "elevation_m":334.4,
+    "observation_time":"2014-12-16T15:45:13-05:00",
+    "temperature_current_c":3.2,
+    "humidex_c":2.6,
+    "windchill_c":-1.3,
+    "temperature_24hr_max_c":4.1,
+    "temperature_24hr_min_c":1.1,
+    "precipitation_15min_mm":null,
+    "precipitation_1hr_mm":0,
+    "precipitation_24hr_mm":0,
+    "relative_humidity_percent":98.9,
+    "dew_point_c":2.3,
+    "wind_speed_kph":28,
+    "wind_direction_degrees":225,
+    "pressure_kpa":100.6,
+    "pressure_trend":"Falling",
+    "incoming_shortwave_radiation_wm2":13.6
+  }
+}
