@@ -7,12 +7,11 @@
 //
 
 import UIKit
+import WeatherlooData
 
-private let endpoint = "https://api.uwaterloo.ca/v2/weather/current.json"
 private let cellIdentifier = "WeatherTableViewControllerCellIdentifier"
 
 class WeatherTableViewController: UITableViewController {
-    var processingQueue: NSOperationQueue = NSOperationQueue()
     var currentReading: Reading?
     @IBOutlet weak var statusItem: StatusBarButtonItem!
     
@@ -69,33 +68,12 @@ class WeatherTableViewController: UITableViewController {
     }
     
     func requestCurrentReading() {
-        let endpointURL = NSURL(string: endpoint)
-        let request = NSURLRequest(URL: endpointURL!, cachePolicy: .ReloadIgnoringLocalCacheData, timeoutInterval: 10.0)
-        
         self.statusItem.text = "Fetching data…"
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
         
-        NSURLConnection.sendAsynchronousRequest(request, queue: self.processingQueue) { (response, data, connectionError) in
-            var reading: Reading?
-            
-            if connectionError == nil {
-                var jsonError: NSError?
-                if let responseDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &jsonError) as NSDictionary? {
-                    if jsonError == nil {
-                        reading = Reading(responseDictionary: responseDictionary)
-                    } else {
-                        println("JSON deserialization error: \(jsonError?.localizedDescription)")
-                    }
-                }
-            } else {
-                println("Connection error: \(connectionError.localizedDescription)")
-            }
-            
-            self.currentReading = reading
-            
-            dispatch_async(dispatch_get_main_queue()) {
-                self.processReading()
-            }
+        requestWeatherData { (response, error) in
+            self.currentReading = (error == nil) ? Reading(responseDictionary: response!) : nil
+            self.processReading()
         }
     }
     

@@ -19,6 +19,7 @@
 		B324908B1A472ADA003FE12D /* WeatherlooData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B32490731A472ADA003FE12D /* WeatherlooData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B36EC1EA1A422A5100391530 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */; };
 		B36EC1F21A4336C100391530 /* StatusBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */; };
+		B38BAABB1A472B3D0047636E /* WeatherlooData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38BAABA1A472B3D0047636E /* WeatherlooData.swift */; };
 		B3EC9C7B1A40AE2F00125BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */; };
 		B3EC9C801A40AE2F00125BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C7E1A40AE2F00125BA8 /* Main.storyboard */; };
 		B3EC9C821A40AE2F00125BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EC9C811A40AE2F00125BA8 /* Images.xcassets */; };
@@ -113,6 +114,7 @@
 		B352D0C31A44EB030070CFEC /* Weatherloo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weatherloo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B36EC1E91A422A5100391530 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		B36EC1F11A4336C100391530 /* StatusBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarButtonItem.swift; sourceTree = "<group>"; };
+		B38BAABA1A472B3D0047636E /* WeatherlooData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherlooData.swift; sourceTree = "<group>"; };
 		B3EC9C751A40AE2F00125BA8 /* Weatherloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC9C791A40AE2F00125BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EC9C7A1A40AE2F00125BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				B32490771A472ADA003FE12D /* WeatherlooData.h */,
+				B38BAABA1A472B3D0047636E /* WeatherlooData.swift */,
 				B32490751A472ADA003FE12D /* Supporting Files */,
 			);
 			path = WeatherlooData;
@@ -601,6 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38BAABB1A472B3D0047636E /* WeatherlooData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +714,7 @@
 		B324908C1A472ADA003FE12D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -724,6 +729,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -733,6 +739,7 @@
 		B324908D1A472ADA003FE12D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -949,6 +956,7 @@
 				B324908D1A472ADA003FE12D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B32490921A472ADA003FE12D /* Build configuration list for PBXNativeTarget "WeatherlooDataTests" */ = {
 			isa = XCConfigurationList;
@@ -957,6 +965,7 @@
 				B324908F1A472ADA003FE12D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3EC9C701A40AE2F00125BA8 /* Build configuration list for PBXProject "Weatherloo" */ = {
 			isa = XCConfigurationList;
