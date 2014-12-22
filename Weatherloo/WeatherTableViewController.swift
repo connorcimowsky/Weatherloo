@@ -90,6 +90,5 @@ class WeatherTableViewController: UITableViewController {
         } else {
             self.statusItem.text = "Weather station unavailable"
         }
-
     }
 }
