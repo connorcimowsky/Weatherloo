@@ -11,10 +11,8 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     var currentReading: Reading?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,29 +21,37 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
-        self.requestCurrentReading()
-        
-        if self.currentReading == nil {
-            completionHandler(.Failed)
-        } else {
-            completionHandler(.NewData)
-        }
-    }
-    
-    func requestCurrentReading() {
         requestWeatherData { (reading, error) in
             self.currentReading = reading
             self.processReading()
+            
+            if self.currentReading == nil {
+                completionHandler(.Failed)
+            } else {
+                completionHandler(.NewData)
+            }
         }
     }
     
     func processReading() {
-//        self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
-//        
-//        if self.currentReading != nil {
-//            self.statusItem.text = "Updated \(NSDate().timeAgo().lowercaseString)"
-//        } else {
-//            self.statusItem.text = "Weather station unavailable"
-//        }
+        if let formattedTemperature = self.currentReading?.formattedTemperature() {
+            self.temperatureLabel.text = formattedTemperature
+            
+            if let formattedHumidex = self.currentReading?.formattedHumidex() {
+                self.temperatureLabel.text = "\(formattedTemperature) (feels like \(formattedHumidex))"
+            } else if let formattedWindChill = self.currentReading?.formattedWindChill() {
+                self.temperatureLabel.text = "\(formattedTemperature) (feels like \(formattedWindChill))"
+            }
+        } else {
+            self.temperatureLabel.text = "-- ºC"
+        }
+        
+        if let formattedObservationTime = self.currentReading?.formattedObservationTime() {
+            self.statusLabel.text = "Current Reading: \(formattedObservationTime)"
+            self.preferredContentSize = CGSizeMake(320.0, 70.0)
+        } else {
+            self.statusLabel.text = nil
+            self.preferredContentSize = CGSizeMake(320.0, 45.0)
+        }
     }
 }
