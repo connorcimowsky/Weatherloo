@@ -14,11 +14,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     
+    // MARK: - UIViewController
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         self.processReading()
     }
+    
+    // MARK: - NCWidgetProviding
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
         requestWeatherData { (reading, error) in
@@ -32,6 +36,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
         }
     }
+    
+    // MARK: - Internal Methods
     
     func processReading() {
         if let formattedTemperature = self.currentReading?.formattedTemperature() {
