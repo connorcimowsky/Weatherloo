@@ -1,12 +1,15 @@
 PODS:
+  - FlurrySDK (4.3.0)
   - ISO8601DateFormatter (0.7)
   - NSDate+TimeAgo (1.0.2)
 
 DEPENDENCIES:
+  - FlurrySDK
   - ISO8601DateFormatter
   - NSDate+TimeAgo
 
 SPEC CHECKSUMS:
+  FlurrySDK: 7d91ccc3b3591fd8eb8919f2b90e271e2b0acabe
   ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
   NSDate+TimeAgo: fe93d3042e83093ae3630bc47ae7d57f782733f6
 
