@@ -12,6 +12,7 @@ private let cellIdentifier = "WeatherTableViewControllerCellIdentifier"
 
 class WeatherTableViewController: UITableViewController {
     var currentReading: Reading?
+    @IBOutlet weak var refreshButton: UIBarButtonItem!
     @IBOutlet weak var statusItem: StatusBarButtonItem!
     
     // MARK: - UIViewController
@@ -71,6 +72,7 @@ class WeatherTableViewController: UITableViewController {
     }
     
     func requestCurrentReading() {
+        self.refreshButton.enabled = false
         self.statusItem.text = "Fetching data…"
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
         
@@ -83,6 +85,8 @@ class WeatherTableViewController: UITableViewController {
     func processReading() {
         self.refreshControl?.endRefreshing()
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
+        self.refreshButton.enabled = true
+        
         self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
         
         if self.currentReading != nil {

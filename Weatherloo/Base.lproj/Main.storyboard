@@ -51,6 +51,7 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Weatherloo" id="m6a-xu-Q62"/>
                     <connections>
+                        <outlet property="refreshButton" destination="Wdm-e2-JZ1" id="SRG-6n-nte"/>
                         <outlet property="statusItem" destination="dwd-vq-wgv" id="UVy-vF-lGQ"/>
                     </connections>
                 </tableViewController>
