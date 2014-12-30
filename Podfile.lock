@@ -1,7 +1,9 @@
 PODS:
-  - FlurrySDK (4.3.0)
+  - FlurrySDK (5.4.0):
+    - FlurrySDK/FlurrySDK (= 5.4.0)
+  - FlurrySDK/FlurrySDK (5.4.0)
   - ISO8601DateFormatter (0.7)
-  - NSDate+TimeAgo (1.0.2)
+  - NSDate+TimeAgo (1.0.3)
 
 DEPENDENCIES:
   - FlurrySDK
@@ -9,8 +11,8 @@ DEPENDENCIES:
   - NSDate+TimeAgo
 
 SPEC CHECKSUMS:
-  FlurrySDK: 7d91ccc3b3591fd8eb8919f2b90e271e2b0acabe
-  ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
-  NSDate+TimeAgo: fe93d3042e83093ae3630bc47ae7d57f782733f6
+  FlurrySDK: bed9e5598353f867508d164795a451e3ada92cb6
+  ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce
+  NSDate+TimeAgo: f3533e0198fab05b716368b19f8c2185d53d6f3b
 
 COCOAPODS: 0.35.0
