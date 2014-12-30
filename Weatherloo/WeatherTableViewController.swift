@@ -75,6 +75,7 @@ class WeatherTableViewController: UITableViewController {
         self.refreshButton.enabled = false
         self.statusItem.text = "Fetching data…"
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
+        Flurry.logEvent("Request current reading")
         
         requestWeatherData { (reading, error) in
             self.currentReading = reading

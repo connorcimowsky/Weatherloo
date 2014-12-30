@@ -25,6 +25,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     // MARK: - NCWidgetProviding
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+        Flurry.logEvent("Widget update")
+        
         requestWeatherData { (reading, error) in
             self.currentReading = reading
             self.processReading()
