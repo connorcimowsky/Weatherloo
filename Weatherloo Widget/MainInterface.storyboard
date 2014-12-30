@@ -40,6 +40,10 @@
                                 </vibrancyEffect>
                             </visualEffectView>
                         </subviews>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="e65-yQ-bMM" appends="YES" id="NWg-wt-Lau"/>
+                        </connections>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -53,6 +57,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="e65-yQ-bMM">
+                    <connections>
+                        <action selector="handleTap:" destination="M4Y-Lb-cyx" id="p4v-Uj-srx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="516" y="285"/>
         </scene>

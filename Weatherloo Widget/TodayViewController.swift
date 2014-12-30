@@ -39,6 +39,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     // MARK: - Internal Methods
     
+    @IBAction func handleTap(sender: UITapGestureRecognizer) {
+        self.extensionContext?.openURL(NSURL(string: "weatherloo:")!, completionHandler: nil)
+    }
+    
     func processReading() {
         if let formattedTemperature = self.currentReading?.formattedTemperature() {
             self.temperatureLabel.text = formattedTemperature
